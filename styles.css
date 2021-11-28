@@ -112,7 +112,7 @@ nav {
 }
 
 .intro {
-  margin: 0 196px;
+  margin: 24px 196px 0;
   font-family: var(--secondary-font);
 }
 
@@ -141,6 +141,15 @@ nav {
   width: 1500px;
 }
 
+.project-container li {
+  display: inline-block;
+}
+
+.project-container button {
+  background: none;
+  border: none;
+}
+
 .project {
   border-radius: 5px;
   border: 2px solid #000;
@@ -149,31 +158,12 @@ nav {
   margin: 0 8px;
   transition: all 0.2s ease-in-out;
   width: 250px;
+  object-fit: cover;
 }
 
 .project:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.project1 {
-  background: center / cover no-repeat url(./images/project1.jpg);
-}
-
-.project2 {
-  background: center / cover no-repeat url(./images/project2.jpg);
-}
-
-.project3 {
-  background: center / cover no-repeat url(./images/project3.jpg);
-}
-
-.project4 {
-  background: center / cover no-repeat url(./images/project4.png);
-}
-
-.project5 {
-  background: center / cover no-repeat url(./images/project5.png);
 }
 
 .arrow {
