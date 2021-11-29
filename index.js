@@ -99,8 +99,16 @@ function showNotification() {
 /** Esta funcion se llama cuando la persona hace click en cualquier porjecto del carousel */
 function openModal(e) {
   document.querySelector('.modal-container').style.display = 'flex';
-  document.querySelector('.modal-project-image').src = e.target.src;
-  document.querySelector('.modal-project-image').alt = e.target.alt;
+  if (e.target.tagName !== 'BUTTON') {
+    document.querySelector('.modal-project-image').src = e.target.src;
+    document.querySelector('.modal-project-image').alt = e.target.alt;
+  } else {
+    document.querySelector('.modal-project-image').src =
+      e.target.firstElementChild.src;
+    document.querySelector('.modal-project-image').alt =
+      e.target.firstElementChild.alt;
+  }
+  document.getElementById('modal-header').focus();
 }
 
 /** Esta funcion se llama para cerrar el modal */

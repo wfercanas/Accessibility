@@ -322,6 +322,10 @@ input:focus {
   width: 100vw;
 }
 
+#modal-header {
+  outline: 3px solid var(--verde);
+}
+
 .modal {
   align-items: center;
   background-color: var(--gris-oscuro);
