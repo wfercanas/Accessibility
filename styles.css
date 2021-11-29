@@ -194,7 +194,7 @@ nav {
   padding: 0;
 }
 
-.project {
+.project-img {
   border-radius: 5px;
   border: 2px solid #000;
   display: inline-block;
@@ -205,7 +205,7 @@ nav {
   object-fit: cover;
 }
 
-.project:hover {
+.project-img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
