@@ -132,7 +132,7 @@
       <form class="form-container">
         <label for="name">Nombre</label>
         <input type="text" aria-label="Name input" id="name" />
-        <span id="name-error"></span>
+        <span id="name-error" aria-live="assertive"></span>
         <label for="email">Correo</label>
         <input type="text" aria-label="Email input" id="email" />
         <label for="message">Mensaje</label>
@@ -141,7 +141,7 @@
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
     <div class="modal-container">
       <div class="modal">
         <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>

@@ -103,7 +103,7 @@ function validateForm(e) {
 
 /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
 function showNotification() {
-  // document.getElementById('name-error').textContent = '';
+  document.getElementById('name-error').textContent = '';
   document.querySelector('.form-container').reset();
   document.querySelector('.notification').style.display = 'flex';
   setTimeout(function () {
