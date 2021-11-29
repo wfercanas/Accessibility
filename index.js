@@ -3,7 +3,7 @@ window.onload = () => {
   document.querySelector('.arrow-left').addEventListener('click', clickLeft);
   document
     .querySelector('.send-button')
-    .addEventListener('click', showNotification);
+    .addEventListener('click', (e) => validateForm(e));
   document.querySelectorAll('.project').forEach((element) => {
     element.addEventListener('click', (e) => openModal(e));
   });
@@ -89,8 +89,22 @@ function clickLeft() {
   }
 }
 
+/* Validar formulario antes de enviar la notificación */
+function validateForm(e) {
+  e.preventDefault();
+  const nameField = document.getElementById('name');
+  if (!nameField.value) {
+    document.getElementById('name-error').textContent =
+      '! Para enviar el formulario, se necesita un nombre';
+  } else {
+    showNotification();
+  }
+}
+
 /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
 function showNotification() {
+  // document.getElementById('name-error').textContent = '';
+  document.querySelector('.form-container').reset();
   document.querySelector('.notification').style.display = 'flex';
   setTimeout(function () {
     document.querySelector('.notification').style.display = 'none';
