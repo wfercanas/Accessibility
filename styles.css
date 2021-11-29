@@ -124,7 +124,19 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 32px auto 0;
-  width: 20%;
+  width: 40%;
+}
+
+.social-media li a {
+  display: flex;
+  align-items: center;
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.social-link-text {
+  padding: 0 8px 0;
 }
 
 .carousel {
