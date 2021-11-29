@@ -57,6 +57,22 @@ section {
   width: 100%;
 }
 
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  background-color: var(--verde);
+  border-radius: 5px;
+  color: var(--gris-oscuro);
+  font-family: var(--secondary-font);
+  height: auto;
+  margin: 16px;
+  padding: 8px;
+  text-decoration: none;
+}
+
 .header {
   color: var(--blanco);
   font-family: var(--main-font);
@@ -224,6 +240,7 @@ nav {
 label {
   color: var(--blanco);
   margin: 0.5rem 0;
+  font-family: var(--secondary-font);
 }
 
 input {
