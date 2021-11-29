@@ -99,6 +99,8 @@ function showNotification() {
 /** Esta funcion se llama cuando la persona hace click en cualquier porjecto del carousel */
 function openModal(e) {
   document.querySelector('.modal-container').style.display = 'flex';
+  document.querySelector('.modal-project-image').src = e.target.src;
+  document.querySelector('.modal-project-image').alt = e.target.alt;
 }
 
 /** Esta funcion se llama para cerrar el modal */
